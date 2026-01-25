@@ -135,7 +135,7 @@ title: Resume
 
 <div class="profile-section">
 <div class="profile-photo-wrapper">
-<img src="https://via.placeholder.com/120x120/4a5568/ffffff?text=MK" alt="Masato Kikukawa" class="profile-photo">
+<img src="assets/images/profile.jpg" alt="Masato Kikukawa" class="profile-photo">
 <span class="open-to-work">OPEN TO WORK</span>
 </div>
 <div class="profile-info">
@@ -322,7 +322,7 @@ Currently engaged in two primary areas:
 
 <div class="profile-section">
 <div class="profile-photo-wrapper">
-<img src="https://via.placeholder.com/120x120/4a5568/ffffff?text=MK" alt="菊川正人" class="profile-photo">
+<img src="assets/images/profile.jpg" alt="菊川正人" class="profile-photo">
 <span class="open-to-work">OPEN TO WORK</span>
 </div>
 <div class="profile-info">

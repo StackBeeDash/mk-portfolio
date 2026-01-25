@@ -239,7 +239,7 @@ description: Full-Stack Developer & Technical Trainer
 <script>
 function unlockContent() {
   const input = document.getElementById('passwordInput').value;
-  if (input === '4321') {
+  if (input === 'hai') {
     document.querySelectorAll('.protected-content').forEach(el => el.classList.add('unlocked'));
     document.querySelectorAll('.unlock-section').forEach(el => el.classList.add('hidden'));
     sessionStorage.setItem('resumeAccess', 'granted');
@@ -251,7 +251,7 @@ function unlockContent() {
 
 function unlockContentJa() {
   const input = document.getElementById('passwordInputJa').value;
-  if (input === '4321') {
+  if (input === 'hai') {
     document.querySelectorAll('.protected-content').forEach(el => el.classList.add('unlocked'));
     document.querySelectorAll('.unlock-section').forEach(el => el.classList.add('hidden'));
     sessionStorage.setItem('resumeAccess', 'granted');

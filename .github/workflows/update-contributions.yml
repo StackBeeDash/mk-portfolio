@@ -21,14 +21,11 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Setup GitHub CLI
-        run: |
-          gh auth login --with-token <<< "${{ secrets.GH_PAT }}"
-
       - name: Generate contributions SVG
         run: node scripts/generate-contributions.js
         env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GH_PAT_PERSONAL: ${{ secrets.GH_PAT_PERSONAL }}
+          GH_PAT_ORG: ${{ secrets.GH_PAT_ORG }}
 
       - name: Commit and push if changed
         run: |

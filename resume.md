@@ -151,9 +151,9 @@ title: Resume
 }
 /* Achievements label */
 .achievements-label {
-  font-weight: 600;
-  font-size: 13px;
-  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--border-color);
   background: var(--table-alt-bg);
   padding: 4px 10px;
   border-radius: 4px;
@@ -161,6 +161,7 @@ title: Resume
   margin-top: 15px;
   margin-bottom: 8px;
   letter-spacing: 0.3px;
+  opacity: 0.8;
 }
 </style>
 
@@ -347,7 +348,7 @@ Currently engaged in two primary areas:
 | **Cloud** | Azure, Google Cloud Platform |
 | **Training** | Course design, Instructional content creation, Udemy |
 | **Programming** | C#, C++, Python, .NET, TypeScript |
-| **Databases** | SQL Server, Oracle, MySQL, Supabase, etc. |
+| **Databases** | SQL Server, MySQL, Supabase, Redis, Cosmos DB, Firestore, etc. |
 | **DevOps** | Docker, Kubernetes, GitHub Actions |
 | **Full-Stack** | HTML, JavaScript, Python, Node.js |
 
@@ -534,7 +535,7 @@ Currently engaged in two primary areas:
 | **クラウド** | Azure, Google Cloud Platform |
 | **トレーニング** | コース設計、教育コンテンツ作成、Udemy |
 | **プログラミング** | C#, C++, Python, .NET, TypeScript |
-| **データベース** | SQL Server, Oracle, MySQL, Supabase, etc. |
+| **データベース** | SQL Server, MySQL, Supabase, Redis, Cosmos DB, Firestore, etc. |
 | **DevOps** | Docker, Kubernetes, GitHub Actions |
 | **フルスタック** | HTML, JavaScript, Python, Node.js |
 

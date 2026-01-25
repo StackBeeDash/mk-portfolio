@@ -50,17 +50,32 @@ title: Resume
 }
 .job {
   margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--border-color);
+}
+.job:last-child {
+  border-bottom: none;
 }
 .job-header {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .job-title {
   font-weight: 600;
+  font-size: 18px;
   color: var(--heading-color);
+  margin-bottom: 4px;
 }
 .job-period {
   color: var(--text-muted);
-  font-size: 14px;
+  font-size: 13px;
+}
+.job ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+.job li {
+  margin-bottom: 6px;
+  line-height: 1.5;
 }
 .achievements {
   margin-top: 10px;
@@ -118,9 +133,12 @@ title: Resume
 /* Achievements label */
 .achievements-label {
   font-weight: 600;
-  color: var(--heading-color);
+  font-size: 14px;
+  color: var(--link-color);
   margin-top: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 </style>
 

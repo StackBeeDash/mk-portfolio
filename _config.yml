@@ -1,11 +1,11 @@
 # Site Settings
-title: MK Portfolio - Hacker Theme
+title: MK Portfolio - Tactile Theme
 description: Personal portfolio and tech blog by Masato Kikukawa
 baseurl: "/mk-portfolio"
 url: "https://stackbeedash.github.io"
 
 # Theme - Cayman via remote_theme
-remote_theme: pages-themes/hacker@v0.2.0
+remote_theme: pages-themes/tactile@v0.2.0
 
 # Build settings
 markdown: kramdown

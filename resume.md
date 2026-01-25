@@ -87,10 +87,14 @@ title: Resume
 .job ul {
   margin: 10px 0;
   padding-left: 20px;
+  list-style-type: disc;
 }
 .job li {
   margin-bottom: 6px;
   line-height: 1.5;
+}
+.job li::marker {
+  color: var(--link-color);
 }
 .achievements {
   margin-top: 10px;

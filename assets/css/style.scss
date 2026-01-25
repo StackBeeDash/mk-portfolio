@@ -124,6 +124,15 @@ body {
   color: var(--text-color);
 }
 
+/* リスト - 丸ぽっち */
+.main-content ul {
+  list-style-type: disc;
+}
+
+.main-content li::marker {
+  color: var(--link-color);
+}
+
 /* リンク */
 .main-content a {
   color: var(--link-color);

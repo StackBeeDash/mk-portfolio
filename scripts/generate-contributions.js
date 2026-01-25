@@ -154,27 +154,46 @@ function getColor(count) {
   return '#216e39';
 }
 
+// 月名
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
 // SVG生成
 function generateSVG(weeks, totalCommits) {
   const cellSize = 11;
   const cellGap = 3;
+  const marginTop = 35; // 月ラベル用のスペース
   const width = weeks.length * (cellSize + cellGap) + 70;
-  const height = 7 * (cellSize + cellGap) + 55;
+  const height = 7 * (cellSize + cellGap) + marginTop + 45;
 
   let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
   <style>
     .title { font: 600 14px 'Segoe UI', sans-serif; fill: #24292f; }
+    .month { font: 400 10px 'Segoe UI', sans-serif; fill: #57606a; }
     .legend { font: 400 10px 'Segoe UI', sans-serif; fill: #57606a; }
     .day { font: 400 9px 'Segoe UI', sans-serif; fill: #57606a; }
   </style>
   <text x="10" y="18" class="title">${totalCommits.toLocaleString()} contributions in the last year</text>
 `;
 
+  // 月ラベル
+  let lastMonth = -1;
+  weeks.forEach((week, weekIndex) => {
+    const firstDay = week[0];
+    if (firstDay) {
+      const month = new Date(firstDay.date).getMonth();
+      if (month !== lastMonth) {
+        const x = 35 + weekIndex * (cellSize + cellGap);
+        svg += `  <text x="${x}" y="${marginTop - 5}" class="month">${MONTHS[month]}</text>\n`;
+        lastMonth = month;
+      }
+    }
+  });
+
   // 曜日ラベル
   const days = ['Sun', '', 'Tue', '', 'Thu', '', 'Sat'];
   days.forEach((day, i) => {
     if (day) {
-      svg += `  <text x="0" y="${35 + i * (cellSize + cellGap) + 9}" class="day">${day}</text>\n`;
+      svg += `  <text x="0" y="${marginTop + i * (cellSize + cellGap) + 9}" class="day">${day}</text>\n`;
     }
   });
 
@@ -182,9 +201,12 @@ function generateSVG(weeks, totalCommits) {
   weeks.forEach((week, weekIndex) => {
     week.forEach((day) => {
       const x = 35 + weekIndex * (cellSize + cellGap);
-      const y = 28 + day.weekday * (cellSize + cellGap);
+      const y = marginTop + day.weekday * (cellSize + cellGap);
       const color = getColor(day.count);
-      svg += `  <rect x="${x}" y="${y}" width="${cellSize}" height="${cellSize}" rx="2" ry="2" fill="${color}"><title>${day.date}: ${day.count} commits</title></rect>\n`;
+      const tooltip = day.count > 0
+        ? `${day.date}: ${day.count} commit${day.count > 1 ? 's' : ''}`
+        : `${day.date}: No contributions`;
+      svg += `  <rect x="${x}" y="${y}" width="${cellSize}" height="${cellSize}" rx="2" ry="2" fill="${color}"><title>${tooltip}</title></rect>\n`;
     });
   });
 

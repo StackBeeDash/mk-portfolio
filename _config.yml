@@ -1,11 +1,11 @@
 # Site Settings
-title: MK Portfolio - Dinky Theme
+title: MK Portfolio - Time-Machine Theme
 description: Personal portfolio and tech blog by Masato Kikukawa
 baseurl: "/mk-portfolio"
 url: "https://stackbeedash.github.io"
 
 # Theme - Cayman via remote_theme
-remote_theme: pages-themes/dinky@v0.2.0
+remote_theme: pages-themes/time-machine@v0.2.0
 
 # Build settings
 markdown: kramdown

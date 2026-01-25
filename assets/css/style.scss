@@ -26,18 +26,49 @@ body {
 
 /* テーマ切り替え用CSS変数 */
 :root {
-  /* Aurora テーマ（デフォルト） */
+  /* Aurora テーマ（ライトモード） */
   --header-bg: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
   --header-text: #2d3748;
+  --body-bg: #ffffff;
+  --content-bg: #ffffff;
+  --text-color: #2d3748;
+  --text-muted: #606770;
+  --heading-color: #1a202c;
   --link-color: #5a9f9f;
   --link-hover: #d4788c;
+  --border-color: #e2e8f0;
+  --code-bg: #f7f7f7;
+  --code-text: #2d3748;
+  --table-border: #e1e4e8;
+  --table-alt-bg: #f6f8fa;
+  --blockquote-border: #a8edea;
+  --blockquote-text: #606770;
 }
 
 [data-theme="forest"] {
+  /* Forest テーマ（ダークモード） */
   --header-bg: linear-gradient(135deg, #134e5e 0%, #71b280 100%);
   --header-text: #ffffff;
-  --link-color: #134e5e;
-  --link-hover: #71b280;
+  --body-bg: #1a1a2e;
+  --content-bg: #1a1a2e;
+  --text-color: #e2e8f0;
+  --text-muted: #a0aec0;
+  --heading-color: #ffffff;
+  --link-color: #71b280;
+  --link-hover: #a8edea;
+  --border-color: #2d3748;
+  --code-bg: #2d3748;
+  --code-text: #e2e8f0;
+  --table-border: #2d3748;
+  --table-alt-bg: #232536;
+  --blockquote-border: #71b280;
+  --blockquote-text: #a0aec0;
+}
+
+/* ページ全体の背景 */
+body {
+  background-color: var(--body-bg);
+  transition: background-color 0.3s ease;
 }
 
 /* ヘッダーにテーマカラーを適用 */
@@ -66,6 +97,33 @@ body {
   opacity: 1;
 }
 
+/* メインコンテンツ */
+.main-content {
+  background-color: var(--content-bg);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 見出し */
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: var(--heading-color);
+}
+
+.main-content h2 {
+  border-bottom-color: var(--border-color);
+}
+
+/* 本文テキスト */
+.main-content p,
+.main-content li {
+  color: var(--text-color);
+}
+
 /* リンク */
 .main-content a {
   color: var(--link-color);
@@ -73,6 +131,62 @@ body {
 
 .main-content a:hover {
   color: var(--link-hover);
+}
+
+/* テーブル */
+.main-content table {
+  background-color: var(--content-bg);
+}
+
+.main-content table th,
+.main-content table td {
+  border-color: var(--table-border);
+  color: var(--text-color);
+}
+
+.main-content table th {
+  background-color: var(--table-alt-bg);
+  color: var(--heading-color);
+}
+
+.main-content table tr:nth-child(odd) {
+  background-color: var(--table-alt-bg);
+}
+
+.main-content table tr:nth-child(even) {
+  background-color: var(--content-bg);
+}
+
+/* コードブロック */
+.main-content code {
+  background-color: var(--code-bg);
+  color: var(--code-text);
+}
+
+.main-content pre {
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  border-color: var(--border-color);
+}
+
+/* 引用 */
+.main-content blockquote {
+  border-left-color: var(--blockquote-border);
+  color: var(--blockquote-text);
+}
+
+/* 水平線 */
+.main-content hr {
+  border-color: var(--border-color);
+}
+
+/* フッター */
+.site-footer {
+  border-top-color: var(--border-color);
+}
+
+.site-footer span {
+  color: var(--text-muted);
 }
 
 /* テーマ切り替えボタン */
@@ -101,8 +215,9 @@ body {
 }
 
 .theme-btn.active {
-  border-color: #333;
+  border-color: var(--heading-color);
   transform: scale(1.15);
+  box-shadow: 0 0 0 2px var(--content-bg), 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .theme-btn-aurora {

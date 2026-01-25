@@ -4,14 +4,15 @@ description: Personal portfolio and tech blog by Masato Kikukawa
 baseurl: "/mk-portfolio"
 url: "https://stackbeedash.github.io"
 
-# Theme - Cayman (GitHub Pages supported theme)
-theme: jekyll-theme-cayman
+# Theme - Cayman via remote_theme
+remote_theme: pages-themes/cayman@v0.2.0
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 # Exclude from processing
 exclude:
@@ -19,5 +20,3 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor
-  - _pages
-  - _projects

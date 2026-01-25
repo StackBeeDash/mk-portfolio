@@ -18,8 +18,8 @@ social:
     - https://www.linkedin.com/in/kikukawa9/
     - https://github.com/StackBeeDash
 
-# Google Analytics (GA4) - Add measurement ID here
-# google_analytics: G-XXXXXXXXXX
+# Google Analytics (GA4)
+google_analytics: G-WP698FM5ZC
 
 # Theme - Cayman via remote_theme
 remote_theme: pages-themes/cayman@v0.2.0

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Resume - Masato Kikukawa
-description: Full-Stack Developer & Technical Trainer with 20+ years of experience in Microsoft technologies, Azure, Google Cloud, and AI/LLM. フルスタック開発者＆技術トレーナー。
+description: Full-Stack Developer & Technical Trainer
 ---
 
 <style>
@@ -695,10 +695,16 @@ To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukaw
 </div>
 
 <script>
+const headerDescriptions = {
+  en: 'Full-Stack Developer & Technical Trainer with 20+ years of experience in Microsoft technologies, Azure, Google Cloud, and AI/LLM.',
+  ja: 'フルスタック開発者＆技術トレーナー。Microsoft技術、Azure、Google Cloud、AI/LLMで20年以上の経験。'
+};
+
 function setLang(lang) {
   document.documentElement.setAttribute('data-lang', lang);
   localStorage.setItem('lang', lang);
   updateLangButtons(lang);
+  updateHeaderDescription(lang);
 }
 
 function updateLangButtons(lang) {
@@ -708,6 +714,19 @@ function updateLangButtons(lang) {
       btn.classList.add('active');
     }
   });
+}
+
+function updateHeaderDescription(lang) {
+  // Update Cayman theme header description
+  const headerDesc = document.querySelector('.project-tagline');
+  if (headerDesc) {
+    headerDesc.textContent = headerDescriptions[lang];
+  }
+  // Update custom header description
+  const customDesc = document.querySelector('.custom-header-desc');
+  if (customDesc) {
+    customDesc.textContent = headerDescriptions[lang];
+  }
 }
 
 // Initialize language on page load

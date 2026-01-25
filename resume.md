@@ -184,7 +184,7 @@ title: Resume
 # Masato Kikukawa
 
 <div class="contact-info">
-<a href="mailto:kikukawa9@gmail.com">kikukawa9@gmail.com</a>
+<a href="mailto:kikukawa@stack-bee.io">kikukawa@stack-bee.io</a>
 <a href="https://www.linkedin.com/in/kikukawa9/">LinkedIn</a>
 <a href="https://github.com/StackBeeDash">GitHub</a>
 </div>
@@ -345,7 +345,7 @@ Currently engaged in two primary areas:
 
 | Category | Technologies |
 |----------|--------------|
-| **Cloud** | Azure, Google Cloud Platform |
+| **Cloud** | Azure, Google Cloud |
 | **Training** | Course design, Instructional content creation, Udemy |
 | **Programming** | C#, C++, Python, .NET, TypeScript |
 | **Databases** | SQL Server, MySQL, Supabase, Redis, Cosmos DB, Firestore, etc. |
@@ -371,7 +371,7 @@ Currently engaged in two primary areas:
 # 菊川 正人
 
 <div class="contact-info">
-<a href="mailto:kikukawa9@gmail.com">kikukawa9@gmail.com</a>
+<a href="mailto:kikukawa@stack-bee.io">kikukawa@stack-bee.io</a>
 <a href="https://www.linkedin.com/in/kikukawa9/">LinkedIn</a>
 <a href="https://github.com/StackBeeDash">GitHub</a>
 </div>
@@ -532,7 +532,7 @@ Currently engaged in two primary areas:
 
 | カテゴリ | 技術 |
 |---------|------|
-| **クラウド** | Azure, Google Cloud Platform |
+| **クラウド** | Azure, Google Cloud |
 | **トレーニング** | コース設計、教育コンテンツ作成、Udemy |
 | **プログラミング** | C#, C++, Python, .NET, TypeScript |
 | **データベース** | SQL Server, MySQL, Supabase, Redis, Cosmos DB, Firestore, etc. |

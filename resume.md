@@ -164,102 +164,84 @@ description: Full-Stack Developer & Technical Trainer with 20+ years of experien
   letter-spacing: 0.3px;
   opacity: 0.8;
 }
-/* Password Protection Overlay */
-.password-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--body-bg, #ffffff);
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Password Protection - Inline Unlock Section */
+.protected-content {
+  display: none;
 }
-.password-box {
+.protected-content.unlocked {
+  display: block;
+}
+.unlock-section {
   text-align: center;
-  padding: 40px;
-  max-width: 400px;
+  padding: 40px 20px;
+  margin: 30px 0;
+  border: 2px dashed var(--border-color, #e2e8f0);
+  border-radius: 12px;
+  background: var(--table-alt-bg, #f7fafc);
 }
-.password-box h2 {
+.unlock-section.hidden {
+  display: none;
+}
+.unlock-section h3 {
   color: var(--heading-color, #2d3748);
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-family: 'Poppins', sans-serif;
 }
-.password-box p {
+.unlock-section p {
   color: var(--text-color, #4a5568);
   margin-bottom: 20px;
   line-height: 1.6;
 }
-.password-box input {
-  padding: 12px 20px;
-  font-size: 18px;
+.unlock-section input {
+  padding: 10px 16px;
+  font-size: 16px;
   border: 2px solid var(--border-color, #e2e8f0);
-  border-radius: 8px;
+  border-radius: 6px;
   text-align: center;
-  width: 150px;
-  margin-bottom: 15px;
+  width: 120px;
+  margin-right: 10px;
   background: var(--content-bg, #ffffff);
   color: var(--text-color, #4a5568);
 }
-.password-box input:focus {
+.unlock-section input:focus {
   outline: none;
   border-color: var(--link-color, #5f8a8a);
 }
-.password-box button {
-  padding: 12px 30px;
+.unlock-section button {
+  padding: 10px 24px;
   font-size: 14px;
   font-weight: 600;
   background: var(--link-color, #5f8a8a);
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
 }
-.password-box button:hover {
+.unlock-section button:hover {
   opacity: 0.9;
 }
-.password-box .error {
+.unlock-section .error {
   color: #e53e3e;
   font-size: 14px;
   margin-top: 10px;
 }
-.password-box .contact-info {
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 1px solid var(--border-color, #e2e8f0);
-  font-size: 14px;
+.unlock-section .contact-hint {
+  margin-top: 20px;
+  font-size: 13px;
+  color: var(--text-muted, #718096);
 }
-.password-box .contact-info a {
+.unlock-section .contact-hint a {
   color: var(--link-color, #5f8a8a);
 }
 </style>
 
-<!-- Password Protection Overlay -->
-<div class="password-overlay" id="passwordOverlay">
-  <div class="password-box">
-    <h2>Protected Content</h2>
-    <p>This resume contains personal information and is password protected.</p>
-    <div>
-      <input type="password" id="passwordInput" placeholder="Password" maxlength="10" autofocus>
-    </div>
-    <button onclick="checkPassword()">Enter</button>
-    <div class="error" id="errorMsg"></div>
-    <div class="contact-info">
-      <p>For recruiters and hiring managers:<br>
-      Please contact <a href="mailto:kikukawa@stack-bee.io">kikukawa@stack-bee.io</a><br>
-      to request access.</p>
-    </div>
-  </div>
-</div>
-
 <script>
-function checkPassword() {
+function unlockContent() {
   const input = document.getElementById('passwordInput').value;
   if (input === '4321') {
-    document.getElementById('passwordOverlay').style.display = 'none';
+    document.querySelectorAll('.protected-content').forEach(el => el.classList.add('unlocked'));
+    document.querySelectorAll('.unlock-section').forEach(el => el.classList.add('hidden'));
     sessionStorage.setItem('resumeAccess', 'granted');
   } else {
     document.getElementById('errorMsg').textContent = 'Incorrect password';
@@ -267,14 +249,39 @@ function checkPassword() {
   }
 }
 
-document.getElementById('passwordInput').addEventListener('keypress', function(e) {
-  if (e.key === 'Enter') checkPassword();
-});
-
-// Check if already authenticated in this session
-if (sessionStorage.getItem('resumeAccess') === 'granted') {
-  document.getElementById('passwordOverlay').style.display = 'none';
+function unlockContentJa() {
+  const input = document.getElementById('passwordInputJa').value;
+  if (input === '4321') {
+    document.querySelectorAll('.protected-content').forEach(el => el.classList.add('unlocked'));
+    document.querySelectorAll('.unlock-section').forEach(el => el.classList.add('hidden'));
+    sessionStorage.setItem('resumeAccess', 'granted');
+  } else {
+    document.getElementById('errorMsgJa').textContent = 'パスワードが正しくありません';
+    document.getElementById('passwordInputJa').value = '';
+  }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const input = document.getElementById('passwordInput');
+  if (input) {
+    input.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') unlockContent();
+    });
+  }
+
+  const inputJa = document.getElementById('passwordInputJa');
+  if (inputJa) {
+    inputJa.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') unlockContentJa();
+    });
+  }
+
+  // Check if already authenticated in this session
+  if (sessionStorage.getItem('resumeAccess') === 'granted') {
+    document.querySelectorAll('.protected-content').forEach(el => el.classList.add('unlocked'));
+    document.querySelectorAll('.unlock-section').forEach(el => el.classList.add('hidden'));
+  }
+});
 </script>
 
 <!-- Language Toggle -->
@@ -314,6 +321,19 @@ At Microsoft, focused on Azure infrastructure and cloud technologies, delivering
 Currently engaged in two primary areas:
 - **Full-Stack Development**: End-to-end system development, business data analytics platforms, and offshore team management
 - **Training**: Azure instructor on Udemy and official Microsoft courses through Trainocate, Fast Lane, and other global partners
+
+<div class="unlock-section" id="unlockSection">
+<h3>View Full Resume</h3>
+<p>To view detailed work experience, skills, and education, please enter the password.</p>
+<input type="password" id="passwordInput" placeholder="Password" maxlength="10">
+<button onclick="unlockContent()">Unlock</button>
+<div class="error" id="errorMsg"></div>
+<div class="contact-hint">
+To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukawa@stack-bee.io</a>
+</div>
+</div>
+
+<div class="protected-content" markdown="1">
 
 ---
 
@@ -464,6 +484,8 @@ Currently engaged in two primary areas:
 | **DevOps** | Docker, Kubernetes, GitHub Actions |
 | **Full-Stack** | HTML, JavaScript, Python, Node.js |
 
+</div>
+
 ---
 
 [Back to Home](.){: .btn}
@@ -501,6 +523,19 @@ Currently engaged in two primary areas:
 現在、主に2つの分野で活動:
 - **フルスタック開発**: エンドツーエンドのシステム開発、ビジネスデータ分析プラットフォーム、オフショアチーム管理
 - **トレーニング**: UdemyでのAzure講師、Trainocate、Fast Laneなどを通じたMicrosoft公式コース提供
+
+<div class="unlock-section unlock-section-ja">
+<h3>詳細を表示</h3>
+<p>詳細な職務経歴、スキル、学歴を確認するには、パスワードを入力してください。</p>
+<input type="password" id="passwordInputJa" placeholder="パスワード" maxlength="10">
+<button onclick="unlockContentJa()">ロック解除</button>
+<div class="error" id="errorMsgJa"></div>
+<div class="contact-hint">
+アクセス権の取得は <a href="mailto:kikukawa@stack-bee.io">kikukawa@stack-bee.io</a> までご連絡ください
+</div>
+</div>
+
+<div class="protected-content" markdown="1">
 
 ---
 
@@ -650,6 +685,8 @@ Currently engaged in two primary areas:
 | **データベース** | SQL Server, MySQL, Supabase, Redis, Cosmos DB, Firestore, etc. |
 | **DevOps** | Docker, Kubernetes, GitHub Actions |
 | **フルスタック** | HTML, JavaScript, Python, Node.js |
+
+</div>
 
 ---
 

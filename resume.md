@@ -49,12 +49,23 @@ title: Resume
   margin-right: 15px;
 }
 .job {
-  margin-bottom: 30px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 35px;
+  padding-bottom: 30px;
+  position: relative;
 }
-.job:last-child {
-  border-bottom: none;
+.job::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background: var(--border-color);
+  border-radius: 1px;
+}
+.job:last-child::after {
+  display: none;
 }
 .job-header {
   margin-bottom: 12px;

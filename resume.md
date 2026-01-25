@@ -7,7 +7,7 @@ title: Resume
 .lang-toggle {
   position: fixed;
   top: 20px;
-  right: 70px;
+  right: 120px;
   z-index: 1000;
   display: flex;
   gap: 8px;
@@ -89,7 +89,7 @@ title: Resume
 </div>
 
 <!-- English Content -->
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 # Masato Kikukawa
 
@@ -267,7 +267,7 @@ Currently engaged in two primary areas:
 </div>
 
 <!-- Japanese Content -->
-<div class="lang-ja">
+<div class="lang-ja" markdown="1">
 
 # 菊川 正人
 

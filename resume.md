@@ -80,6 +80,48 @@ title: Resume
   border-radius: 6px;
   font-size: 14px;
 }
+/* Profile Photo */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+.profile-photo-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border-color);
+  background: var(--table-alt-bg);
+}
+.open-to-work {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0a66c2;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+.profile-info h1 {
+  margin: 0 0 5px 0;
+}
+/* Achievements label */
+.achievements-label {
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
 </style>
 
 <!-- Language Toggle -->
@@ -91,12 +133,21 @@ title: Resume
 <!-- English Content -->
 <div class="lang-en" markdown="1">
 
+<div class="profile-section">
+<div class="profile-photo-wrapper">
+<img src="https://via.placeholder.com/120x120/4a5568/ffffff?text=MK" alt="Masato Kikukawa" class="profile-photo">
+<span class="open-to-work">OPEN TO WORK</span>
+</div>
+<div class="profile-info">
+
 # Masato Kikukawa
 
 <div class="contact-info">
 <a href="mailto:kikukawa9@gmail.com">kikukawa9@gmail.com</a>
 <a href="https://www.linkedin.com/in/kikukawa9/">LinkedIn</a>
 <a href="https://github.com/StackBeeDash">GitHub</a>
+</div>
+</div>
 </div>
 
 ---
@@ -126,7 +177,7 @@ Currently engaged in two primary areas:
 - Build Facebook business data analytics systems for data-driven decision-making
 - Manage offshore development teams, overseeing the entire development lifecycle
 
-**Achievements:**
+<p class="achievements-label">Achievements:</p>
 - Successfully launched and maintained Azure fundamentals courses on Udemy
 - Directed multiple international projects with offshore teams
 - Built partnerships with leading training companies (Trainocate, Fast Lane, Microsoft)
@@ -143,7 +194,7 @@ Currently engaged in two primary areas:
 - Provided training on big data analysis foundations (Spark, Databricks, Azure Synapse, Machine Learning)
 - Created custom training materials to enhance learning effectiveness
 
-**Achievements:**
+<p class="achievements-label">Achievements:</p>
 - Delivered training at least 12 days per month
 - Instructor Recognition: 1,500+ students reached
 - Over 90% student satisfaction score
@@ -160,7 +211,7 @@ Currently engaged in two primary areas:
 - Started the GCP training business from scratch
 - Trained new authorized GCP trainers
 
-**Achievements:**
+<p class="achievements-label">Achievements:</p>
 - Launched training business from scratch
 - Offered 3 GCP official training courses
 - Student satisfaction average rating 4.6+ out of 5.0
@@ -177,7 +228,7 @@ Currently engaged in two primary areas:
 - Web scraping development projects using Python and Selenium
 - WordPress and Python (Flask) web application development
 
-**Achievements:**
+<p class="achievements-label">Achievements:</p>
 - Produced and offered 4 Udemy online courses
 - Completed 4 full-stack development projects using Python
 </div>
@@ -191,7 +242,7 @@ Currently engaged in two primary areas:
 - Community medical system requirements, construction, deployment, and maintenance
 - Regional collaboration wearable device IoT demonstration project
 
-**Achievements:**
+<p class="achievements-label">Achievements:</p>
 - Built medical network system connecting 50+ facilities
 - Managed and completed difficult migration projects on schedule
 </div>
@@ -206,7 +257,7 @@ Currently engaged in two primary areas:
 - Network service product planning for SMEs
 - Print system development for 20,000 convenience stores nationwide
 
-**Achievements:**
+<p class="achievements-label">Achievements:</p>
 - Doubled viewer component drawing speed of medical package system
 - System introduction to large hospitals (1,000+ beds)
 - Released 2 enterprise service products
@@ -269,12 +320,21 @@ Currently engaged in two primary areas:
 <!-- Japanese Content -->
 <div class="lang-ja" markdown="1">
 
+<div class="profile-section">
+<div class="profile-photo-wrapper">
+<img src="https://via.placeholder.com/120x120/4a5568/ffffff?text=MK" alt="菊川正人" class="profile-photo">
+<span class="open-to-work">OPEN TO WORK</span>
+</div>
+<div class="profile-info">
+
 # 菊川 正人
 
 <div class="contact-info">
 <a href="mailto:kikukawa9@gmail.com">kikukawa9@gmail.com</a>
 <a href="https://www.linkedin.com/in/kikukawa9/">LinkedIn</a>
 <a href="https://github.com/StackBeeDash">GitHub</a>
+</div>
+</div>
 </div>
 
 ---
@@ -304,7 +364,7 @@ Currently engaged in two primary areas:
 - Facebookビジネスデータ分析システムの構築
 - オフショア開発チームの管理、計画からリリースまでの全工程を監督
 
-**実績:**
+<p class="achievements-label">実績:</p>
 - UdemyでAzure基礎コースの立ち上げ・運営に成功
 - 複数の国際プロジェクトを指揮、オフショアチームを管理
 - 主要トレーニング企業（Trainocate、Fast Lane、Microsoft）とパートナーシップを構築
@@ -321,7 +381,7 @@ Currently engaged in two primary areas:
 - ビッグデータ分析基礎（Spark、Databricks、Azure Synapse、機械学習）のトレーニング
 - 学習効果向上のため独自教材を作成
 
-**実績:**
+<p class="achievements-label">実績:</p>
 - 月12日以上のトレーニング提供
 - インストラクター表彰: 1,500人以上の学生を指導
 - 学生満足度90%以上
@@ -338,7 +398,7 @@ Currently engaged in two primary areas:
 - GCPトレーニング事業をゼロから立ち上げ
 - 新規GCP認定トレーナーを育成
 
-**実績:**
+<p class="achievements-label">実績:</p>
 - トレーニング事業をゼロから立ち上げ
 - 3つのGCP公式トレーニングコースを提供
 - 学生満足度平均4.6点以上（5.0点満点）
@@ -355,7 +415,7 @@ Currently engaged in two primary areas:
 - Python・Seleniumを使用したWebスクレイピング開発プロジェクト
 - WordPressおよびPython (Flask) Webアプリケーション開発
 
-**実績:**
+<p class="achievements-label">実績:</p>
 - Udemyオンラインコースを4つ制作・提供
 - Pythonを使用したフルスタック開発プロジェクトを4件完了
 </div>
@@ -369,7 +429,7 @@ Currently engaged in two primary areas:
 - 地域医療システムの要件定義・構築・導入・保守
 - 地域連携ウェアラブルデバイスIoT実証実験プロジェクト
 
-**実績:**
+<p class="achievements-label">実績:</p>
 - 50以上の施設をつなぐ医療ネットワークシステムを構築
 - 困難な移行プロジェクトを管理し、計画通りに完了
 </div>
@@ -384,7 +444,7 @@ Currently engaged in two primary areas:
 - 中小企業向けネットワークサービス商品の企画
 - 全国2万店のコンビニ向け印刷システム開発
 
-**実績:**
+<p class="achievements-label">実績:</p>
 - 医療パッケージシステムのビューア描画速度を2倍に改善
 - 1,000床以上の大規模病院へシステム導入
 - エンタープライズ向けサービス商品を2つリリース

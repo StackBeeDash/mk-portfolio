@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Home
+title: MK Portfolio - Masato Kikukawa
+description: Portfolio of Masato Kikukawa - Full-Stack Developer & Technical Trainer specializing in Azure, Google Cloud, and AI/LLM technologies.
 ---
 
 # Welcome

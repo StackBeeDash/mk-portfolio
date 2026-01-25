@@ -1,8 +1,25 @@
 # Site Settings
 title: MK Portfolio
-description: Personal portfolio and tech blog by Masato Kikukawa
+description: Full-Stack Developer & Technical Trainer | Azure, Google Cloud, AI/LLM | フルスタック開発者＆技術トレーナー
 baseurl: "/mk-portfolio"
 url: "https://stackbeedash.github.io"
+lang: ja
+
+# Author information (used by jekyll-seo-tag)
+author:
+  name: Masato Kikukawa
+  email: kikukawa@stack-bee.io
+  twitter: kikukawa9
+
+# Social links (used by jekyll-seo-tag)
+social:
+  name: Masato Kikukawa
+  links:
+    - https://www.linkedin.com/in/kikukawa9/
+    - https://github.com/StackBeeDash
+
+# Google Analytics (GA4) - Add measurement ID here
+# google_analytics: G-XXXXXXXXXX
 
 # Theme - Cayman via remote_theme
 remote_theme: pages-themes/cayman@v0.2.0

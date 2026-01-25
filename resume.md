@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Resume
+title: Resume - Masato Kikukawa
+description: Full-Stack Developer & Technical Trainer with 20+ years of experience in Microsoft technologies, Azure, Google Cloud, and AI/LLM. フルスタック開発者＆技術トレーナー。
 ---
 
 <style>

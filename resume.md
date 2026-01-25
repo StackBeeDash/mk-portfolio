@@ -73,8 +73,12 @@ title: Resume
 .job-title {
   font-weight: 600;
   font-size: 18px;
-  color: var(--heading-color);
-  margin-bottom: 4px;
+  color: var(--content-bg);
+  background: var(--heading-color);
+  padding: 6px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 8px;
 }
 .job-period {
   color: var(--text-muted);

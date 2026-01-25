@@ -1,8 +1,8 @@
 # Site Settings
 title: MK Portfolio
 description: Full-Stack Developer & Technical Trainer | Azure, Google Cloud, AI/LLM | フルスタック開発者＆技術トレーナー
-baseurl: "/mk-portfolio"
-url: "https://stackbeedash.github.io"
+baseurl: ""
+url: "https://portfolio.stack-bee.io"
 lang: ja
 
 # Author information (used by jekyll-seo-tag)
@@ -29,6 +29,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-remote-theme
 
 # Exclude from processing

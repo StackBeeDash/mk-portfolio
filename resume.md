@@ -1,10 +1,12 @@
 ---
-layout: page
-title: Resume
+layout: single
+title: "Resume"
 permalink: /resume/
+author_profile: true
+toc: true
+toc_label: "Contents"
+toc_sticky: true
 ---
-
-# Masato Kikukawa
 
 ## About
 
@@ -12,14 +14,16 @@ Software engineer with a focus on building practical tools that enhance producti
 
 ## Skills
 
-- **Languages**: TypeScript, JavaScript, Python
-- **Frameworks**: Node.js
-- **Cloud**: (TBD)
-- **Tools**: GitHub, Claude Code, MCP
+| Category | Technologies |
+|----------|--------------|
+| **Languages** | TypeScript, JavaScript, Python |
+| **Frameworks** | Node.js |
+| **Tools** | GitHub, Claude Code, MCP |
+| **Integrations** | Slack API, Gmail API, Google Calendar API |
 
 ## Experience
 
-(Coming soon - detailed career history will be added)
+*Coming soon - detailed career history will be added*
 
 ## Projects
 
@@ -27,15 +31,26 @@ Software engineer with a focus on building practical tools that enhance producti
 
 Personal knowledge management system using GitHub Issues and Claude Code.
 
+**Features:**
 - GitHub Issues as CMS for communication logs, ideas, and places
 - MCP servers for Slack, Gmail, Google Calendar integration
 - Automated daily summaries and intelligent search
+- Label-based categorization system
+
+[View on GitHub](https://github.com/StackBeeDash/kb-repo){: .btn .btn--info}
 
 ### mk-portfolio
 
 This portfolio site - built with Jekyll and GitHub Pages.
 
+**Tech Stack:**
+- Jekyll with minimal-mistakes theme
+- GitHub Pages hosting
+- GitHub Actions for CI/CD
+
+[View on GitHub](https://github.com/StackBeeDash/mk-portfolio){: .btn .btn--info}
+
 ## Contact
 
-- GitHub: [StackBeeDash](https://github.com/StackBeeDash)
-- LinkedIn: (TBD)
+- **GitHub**: [StackBeeDash](https://github.com/StackBeeDash)
+- **LinkedIn**: *(TBD)*

@@ -1,19 +1,60 @@
+# Site Settings
 title: MK Portfolio
-description: Personal portfolio and tech blog
+subtitle: "Software Engineer & Builder"
+description: Personal portfolio and tech blog by Masato Kikukawa
 baseurl: "/mk-portfolio"
 url: "https://stackbeedash.github.io"
 
 # Theme
-theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "dark"  # air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-include-cache
+  - jekyll-paginate
+
+# Author
+author:
+  name: "Masato Kikukawa"
+  avatar: "/assets/images/avatar.png"
+  bio: "Building tools that enhance productivity and communication workflows"
+  location: "Japan"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/StackBeeDash"
+
+# Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/StackBeeDash"
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: true
 
 # Exclude from processing
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - vendor

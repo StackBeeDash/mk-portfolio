@@ -24,28 +24,91 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* デフォルトカラー（後で選択したものに変更） */
-.page-header {
-  background-color: #1a1a2e;
-  background-image: linear-gradient(120deg, #1a1a2e, #16213e, #0f3460);
+/* テーマ切り替え用CSS変数 */
+:root {
+  /* Aurora テーマ（デフォルト） */
+  --header-bg: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  --header-text: #2d3748;
+  --link-color: #5a9f9f;
+  --link-hover: #d4788c;
 }
 
+[data-theme="forest"] {
+  --header-bg: linear-gradient(135deg, #134e5e 0%, #71b280 100%);
+  --header-text: #ffffff;
+  --link-color: #134e5e;
+  --link-hover: #71b280;
+}
+
+/* ヘッダーにテーマカラーを適用 */
+.page-header {
+  background: var(--header-bg);
+}
+
+.page-header .project-name,
+.page-header .project-tagline {
+  color: var(--header-text);
+  text-shadow: none;
+}
+
+/* ボタン */
 .btn {
-  color: rgba(255, 255, 255, 0.9);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--header-text);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: var(--header-text);
+  opacity: 0.9;
 }
 
 .btn:hover {
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.3);
+  color: var(--header-text);
+  background-color: rgba(255, 255, 255, 0.35);
+  border-color: var(--header-text);
+  opacity: 1;
 }
 
+/* リンク */
 .main-content a {
-  color: #0f3460;
+  color: var(--link-color);
 }
 
 .main-content a:hover {
-  color: #1a1a2e;
+  color: var(--link-hover);
+}
+
+/* テーマ切り替えボタン */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 8px;
+}
+
+.theme-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 3px solid white;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.theme-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.theme-btn.active {
+  border-color: #333;
+  transform: scale(1.15);
+}
+
+.theme-btn-aurora {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.theme-btn-forest {
+  background: linear-gradient(135deg, #134e5e 0%, #71b280 100%);
 }

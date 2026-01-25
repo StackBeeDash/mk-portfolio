@@ -323,19 +323,6 @@ Currently engaged in two primary areas:
 - **Full-Stack Development**: End-to-end system development, business data analytics platforms, and offshore team management
 - **Training**: Azure instructor on Udemy and official Microsoft courses through Trainocate, Fast Lane, and other global partners
 
-<div class="unlock-section" id="unlockSection">
-<h3>View Full Resume</h3>
-<p>To view detailed work experience, skills, and education, please enter the password.</p>
-<input type="password" id="passwordInput" placeholder="Password" maxlength="10">
-<button onclick="unlockContent()">Unlock</button>
-<div class="error" id="errorMsg"></div>
-<div class="contact-hint">
-To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukawa@stack-bee.io</a>
-</div>
-</div>
-
-<div class="protected-content" markdown="1">
-
 ---
 
 ## Experience
@@ -362,6 +349,7 @@ To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukaw
 <div class="job-title">Microsoft Japan - Cloud Technical Trainer</div>
 <div class="job-period">February 2021 - July 2025</div>
 </div>
+<div class="protected-content" markdown="1">
 
 - Provided technical training for Azure infrastructure courses (networking, storage, VMs, disaster recovery, backup, cloud applications)
 - Trained on AI solutions using ChatGPT's engine on Azure
@@ -374,12 +362,14 @@ To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukaw
 - Over 90% student satisfaction score
 - Speaking at Microsoft Ignite event
 </div>
+</div>
 
 <div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">TOPGATE - GCP Authorized Trainer</div>
 <div class="job-period">August 2019 - January 2021</div>
 </div>
+<div class="protected-content" markdown="1">
 
 - Offered official GCP training courses covering IaaS, PaaS, Kubernetes, Network, Load Balancing, Storage, Big Data, and ML
 - Started the GCP training business from scratch
@@ -391,12 +381,14 @@ To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukaw
 - Student satisfaction average rating 4.6+ out of 5.0
 - Trained 4 GCP trainers
 </div>
+</div>
 
 <div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">Freelance Engineer</div>
 <div class="job-period">April 2017 - July 2019</div>
 </div>
+<div class="protected-content" markdown="1">
 
 - Online instructor of Python programming
 - Web scraping development projects using Python and Selenium
@@ -406,12 +398,14 @@ To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukaw
 - Produced and offered 4 Udemy online courses
 - Completed 4 full-stack development projects using Python
 </div>
+</div>
 
 <div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">Healthcare Relations</div>
 <div class="job-period">January 2015 - May 2017</div>
 </div>
+<div class="protected-content" markdown="1">
 
 - Community medical system requirements, construction, deployment, and maintenance
 - Regional collaboration wearable device IoT demonstration project
@@ -420,12 +414,14 @@ To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukaw
 - Built medical network system connecting 50+ facilities
 - Managed and completed difficult migration projects on schedule
 </div>
+</div>
 
 <div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">Fuji Xerox - Medical / Product Planning / Software Development</div>
 <div class="job-period">April 2003 - December 2015</div>
 </div>
+<div class="protected-content" markdown="1">
 
 - In-hospital document management system development
 - Network service product planning for SMEs
@@ -436,6 +432,20 @@ To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukaw
 - System introduction to large hospitals (1,000+ beds)
 - Released 2 enterprise service products
 </div>
+</div>
+
+<div class="unlock-section" id="unlockSection">
+<h3>View Full Details</h3>
+<p>To view detailed work history, skills, and education, please enter the password.</p>
+<input type="password" id="passwordInput" placeholder="Password" maxlength="10">
+<button onclick="unlockContent()">Unlock</button>
+<div class="error" id="errorMsg"></div>
+<div class="contact-hint">
+To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukawa@stack-bee.io</a>
+</div>
+</div>
+
+<div class="protected-content" markdown="1">
 
 ---
 
@@ -526,19 +536,6 @@ To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukaw
 - **フルスタック開発**: エンドツーエンドのシステム開発、ビジネスデータ分析プラットフォーム、オフショアチーム管理
 - **トレーニング**: UdemyでのAzure講師、Trainocate、Fast Laneなどを通じたMicrosoft公式コース提供
 
-<div class="unlock-section unlock-section-ja">
-<h3>詳細を表示</h3>
-<p>詳細な職務経歴、スキル、学歴を確認するには、パスワードを入力してください。</p>
-<input type="password" id="passwordInputJa" placeholder="パスワード" maxlength="10">
-<button onclick="unlockContentJa()">ロック解除</button>
-<div class="error" id="errorMsgJa"></div>
-<div class="contact-hint">
-アクセス権の取得は <a href="mailto:kikukawa@stack-bee.io">kikukawa@stack-bee.io</a> までご連絡ください
-</div>
-</div>
-
-<div class="protected-content" markdown="1">
-
 ---
 
 ## 職務経歴
@@ -565,6 +562,7 @@ To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukaw
 <div class="job-title">日本マイクロソフト株式会社 - クラウド技術トレーナー</div>
 <div class="job-period">2021年2月 - 2025年7月</div>
 </div>
+<div class="protected-content" markdown="1">
 
 - Azureインフラストラクチャコース（ネットワーク、ストレージ、VM、災害復旧、バックアップ、クラウドアプリ）の技術トレーニング提供
 - Azure上でChatGPTエンジンを使用したAIソリューションのトレーニング
@@ -577,12 +575,14 @@ To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukaw
 - 学生満足度90%以上
 - Microsoft Igniteイベントで登壇
 </div>
+</div>
 
 <div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">TOPGATE - GCP認定トレーナー</div>
 <div class="job-period">2019年8月 - 2021年1月</div>
 </div>
+<div class="protected-content" markdown="1">
 
 - IaaS、PaaS、Kubernetes、ネットワーク、ロードバランシング、ストレージ、ビッグデータ、MLをカバーするGCP公式トレーニングコースを提供
 - GCPトレーニング事業をゼロから立ち上げ
@@ -594,12 +594,14 @@ To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukaw
 - 学生満足度平均4.6点以上（5.0点満点）
 - 4名のGCPトレーナーを育成
 </div>
+</div>
 
 <div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">フリーランスエンジニア</div>
 <div class="job-period">2017年4月 - 2019年7月</div>
 </div>
+<div class="protected-content" markdown="1">
 
 - Pythonプログラミングのオンライン講師
 - Python・Seleniumを使用したWebスクレイピング開発プロジェクト
@@ -609,12 +611,14 @@ To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukaw
 - Udemyオンラインコースを4つ制作・提供
 - Pythonを使用したフルスタック開発プロジェクトを4件完了
 </div>
+</div>
 
 <div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">ヘルスケアリレーションズ</div>
 <div class="job-period">2015年1月 - 2017年5月</div>
 </div>
+<div class="protected-content" markdown="1">
 
 - 地域医療システムの要件定義・構築・導入・保守
 - 地域連携ウェアラブルデバイスIoT実証実験プロジェクト
@@ -623,12 +627,14 @@ To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukaw
 - 50以上の施設をつなぐ医療ネットワークシステムを構築
 - 困難な移行プロジェクトを管理し、計画通りに完了
 </div>
+</div>
 
 <div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">富士ゼロックス - メディカル / 商品企画 / ソフトウェア開発</div>
 <div class="job-period">2003年4月 - 2015年12月</div>
 </div>
+<div class="protected-content" markdown="1">
 
 - 院内文書管理システムの開発
 - 中小企業向けネットワークサービス商品の企画
@@ -639,6 +645,20 @@ To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukaw
 - 1,000床以上の大規模病院へシステム導入
 - エンタープライズ向けサービス商品を2つリリース
 </div>
+</div>
+
+<div class="unlock-section unlock-section-ja">
+<h3>詳細を表示</h3>
+<p>詳細な職務経歴、スキル、学歴を確認するには、パスワードを入力してください。</p>
+<input type="password" id="passwordInputJa" placeholder="パスワード" maxlength="10">
+<button onclick="unlockContentJa()">ロック解除</button>
+<div class="error" id="errorMsgJa"></div>
+<div class="contact-hint">
+アクセス権の取得は <a href="mailto:kikukawa@stack-bee.io">kikukawa@stack-bee.io</a> までご連絡ください
+</div>
+</div>
+
+<div class="protected-content" markdown="1">
 
 ---
 

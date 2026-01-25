@@ -306,6 +306,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <a href="mailto:kikukawa@stack-bee.io">kikukawa@stack-bee.io</a>
 <a href="https://www.linkedin.com/in/kikukawa9/">LinkedIn</a>
 <a href="https://github.com/StackBeeDash">GitHub</a>
+<a href="https://x.com/StackBeeDash">X (Twitter)</a>
 </div>
 </div>
 </div>
@@ -508,6 +509,7 @@ To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukaw
 <a href="mailto:kikukawa@stack-bee.io">kikukawa@stack-bee.io</a>
 <a href="https://www.linkedin.com/in/kikukawa9/">LinkedIn</a>
 <a href="https://github.com/StackBeeDash">GitHub</a>
+<a href="https://x.com/StackBeeDash">X (Twitter)</a>
 </div>
 </div>
 </div>

@@ -325,6 +325,12 @@ Currently engaged in two primary areas:
 
 ---
 
+## GitHub Activity
+
+<img src="assets/images/contributions.svg" alt="GitHub Contributions" style="width: 100%; max-width: 800px;">
+
+---
+
 ## Experience
 
 <div class="job" markdown="1">
@@ -535,6 +541,12 @@ To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukaw
 現在、主に2つの分野で活動:
 - **フルスタック開発**: エンドツーエンドのシステム開発、ビジネスデータ分析プラットフォーム、オフショアチーム管理
 - **トレーニング**: UdemyでのAzure講師、Trainocate、Fast Laneなどを通じたMicrosoft公式コース提供
+
+---
+
+## GitHub Activity
+
+<img src="assets/images/contributions.svg" alt="GitHub Contributions" style="width: 100%; max-width: 800px;">
 
 ---
 

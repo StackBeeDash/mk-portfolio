@@ -1,11 +1,10 @@
 ---
-layout: single
-title: "Resume"
+layout: page
+title: Resume
 permalink: /resume/
-author_profile: true
-toc: true
-toc_label: "Contents"
-toc_sticky: true
+description: My background and skills
+nav: true
+nav_order: 3
 ---
 
 ## About
@@ -31,24 +30,18 @@ Software engineer with a focus on building practical tools that enhance producti
 
 Personal knowledge management system using GitHub Issues and Claude Code.
 
-**Features:**
 - GitHub Issues as CMS for communication logs, ideas, and places
 - MCP servers for Slack, Gmail, Google Calendar integration
 - Automated daily summaries and intelligent search
 - Label-based categorization system
 
-[View on GitHub](https://github.com/StackBeeDash/kb-repo){: .btn .btn--info}
-
 ### mk-portfolio
 
 This portfolio site - built with Jekyll and GitHub Pages.
 
-**Tech Stack:**
-- Jekyll with minimal-mistakes theme
+- Jekyll with al-folio theme
 - GitHub Pages hosting
 - GitHub Actions for CI/CD
-
-[View on GitHub](https://github.com/StackBeeDash/mk-portfolio){: .btn .btn--info}
 
 ## Contact
 

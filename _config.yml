@@ -1,56 +1,28 @@
 # Site Settings
 title: MK Portfolio
-subtitle: "Software Engineer & Builder"
-description: Personal portfolio and tech blog by Masato Kikukawa
+description: Personal portfolio and tech blog
 baseurl: "/mk-portfolio"
 url: "https://stackbeedash.github.io"
 
 # Theme
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin: "dark"  # air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
+remote_theme: alshedivat/al-folio
+
+# Personal info
+first_name: Masato
+last_name: Kikukawa
+email:
+description: Software Engineer & Builder
+
+# Social
+github_username: StackBeeDash
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-include-cache
-  - jekyll-paginate
-
-# Author
-author:
-  name: "Masato Kikukawa"
-  avatar: "/assets/images/avatar.png"
-  bio: "Building tools that enhance productivity and communication workflows"
-  location: "Japan"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/StackBeeDash"
-
-# Footer
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/StackBeeDash"
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: false
-      share: false
-  - scope:
-      path: ""
-    values:
-      layout: single
-      author_profile: true
+  - jekyll-sitemap
+  - jekyll-remote-theme
 
 # Exclude from processing
 exclude:
@@ -58,3 +30,10 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor
+
+# al-folio settings
+enable_darkmode: true
+enable_navbar_social: true
+
+# Navigation
+nav_order: [about, projects, resume]

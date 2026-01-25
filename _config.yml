@@ -1,0 +1,19 @@
+title: MK Portfolio
+description: Personal portfolio and tech blog
+baseurl: "/mk-portfolio"
+url: "https://stackbeedash.github.io"
+
+# Theme
+theme: minima
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

@@ -203,7 +203,7 @@ Currently engaged in two primary areas:
 
 ## Experience
 
-<div class="job">
+<div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">Freelance Trainer / Full-Stack Engineer</div>
 <div class="job-period">July 2025 - Present</div>
@@ -220,7 +220,7 @@ Currently engaged in two primary areas:
 - Built partnerships with leading training companies (Trainocate, Fast Lane, Microsoft)
 </div>
 
-<div class="job">
+<div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">Microsoft Japan - Cloud Technical Trainer</div>
 <div class="job-period">February 2021 - July 2025</div>
@@ -238,7 +238,7 @@ Currently engaged in two primary areas:
 - Speaking at Microsoft Ignite event
 </div>
 
-<div class="job">
+<div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">TOPGATE - GCP Authorized Trainer</div>
 <div class="job-period">August 2019 - January 2021</div>
@@ -255,7 +255,7 @@ Currently engaged in two primary areas:
 - Trained 4 GCP trainers
 </div>
 
-<div class="job">
+<div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">Freelance Engineer</div>
 <div class="job-period">April 2017 - July 2019</div>
@@ -270,7 +270,7 @@ Currently engaged in two primary areas:
 - Completed 4 full-stack development projects using Python
 </div>
 
-<div class="job">
+<div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">Healthcare Relations</div>
 <div class="job-period">January 2015 - May 2017</div>
@@ -284,7 +284,7 @@ Currently engaged in two primary areas:
 - Managed and completed difficult migration projects on schedule
 </div>
 
-<div class="job">
+<div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">Fuji Xerox - Medical / Product Planning / Software Development</div>
 <div class="job-period">April 2003 - December 2015</div>
@@ -390,7 +390,7 @@ Currently engaged in two primary areas:
 
 ## 職務経歴
 
-<div class="job">
+<div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">フリーランス トレーナー / フルスタックエンジニア</div>
 <div class="job-period">2025年7月 - 現在</div>
@@ -407,7 +407,7 @@ Currently engaged in two primary areas:
 - 主要トレーニング企業（Trainocate、Fast Lane、Microsoft）とパートナーシップを構築
 </div>
 
-<div class="job">
+<div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">日本マイクロソフト株式会社 - クラウド技術トレーナー</div>
 <div class="job-period">2021年2月 - 2025年7月</div>
@@ -425,7 +425,7 @@ Currently engaged in two primary areas:
 - Microsoft Igniteイベントで登壇
 </div>
 
-<div class="job">
+<div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">TOPGATE - GCP認定トレーナー</div>
 <div class="job-period">2019年8月 - 2021年1月</div>
@@ -442,7 +442,7 @@ Currently engaged in two primary areas:
 - 4名のGCPトレーナーを育成
 </div>
 
-<div class="job">
+<div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">フリーランスエンジニア</div>
 <div class="job-period">2017年4月 - 2019年7月</div>
@@ -457,7 +457,7 @@ Currently engaged in two primary areas:
 - Pythonを使用したフルスタック開発プロジェクトを4件完了
 </div>
 
-<div class="job">
+<div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">ヘルスケアリレーションズ</div>
 <div class="job-period">2015年1月 - 2017年5月</div>
@@ -471,7 +471,7 @@ Currently engaged in two primary areas:
 - 困難な移行プロジェクトを管理し、計画通りに完了
 </div>
 
-<div class="job">
+<div class="job" markdown="1">
 <div class="job-header">
 <div class="job-title">富士ゼロックス - メディカル / 商品企画 / ソフトウェア開発</div>
 <div class="job-period">2003年4月 - 2015年12月</div>

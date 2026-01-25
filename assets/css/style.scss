@@ -1,17 +1,35 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&family=DM+Sans:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 @import "jekyll-theme-cayman";
 
-/* カスタムカラー - ダークブルー/パープル系 */
+/* Poppins フォントをサイト全体に適用 */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.page-header .project-name,
+.page-header .project-tagline {
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* デフォルトカラー（後で選択したものに変更） */
 .page-header {
   background-color: #1a1a2e;
   background-image: linear-gradient(120deg, #1a1a2e, #16213e, #0f3460);
 }
 
-/* ボタンの色も調整 */
 .btn {
   color: rgba(255, 255, 255, 0.9);
   background-color: rgba(255, 255, 255, 0.08);
@@ -24,7 +42,6 @@
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-/* リンク色 */
 .main-content a {
   color: #0f3460;
 }

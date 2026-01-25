@@ -164,7 +164,118 @@ description: Full-Stack Developer & Technical Trainer with 20+ years of experien
   letter-spacing: 0.3px;
   opacity: 0.8;
 }
+/* Password Protection Overlay */
+.password-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--body-bg, #ffffff);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.password-box {
+  text-align: center;
+  padding: 40px;
+  max-width: 400px;
+}
+.password-box h2 {
+  color: var(--heading-color, #2d3748);
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+.password-box p {
+  color: var(--text-color, #4a5568);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.password-box input {
+  padding: 12px 20px;
+  font-size: 18px;
+  border: 2px solid var(--border-color, #e2e8f0);
+  border-radius: 8px;
+  text-align: center;
+  width: 150px;
+  margin-bottom: 15px;
+  background: var(--content-bg, #ffffff);
+  color: var(--text-color, #4a5568);
+}
+.password-box input:focus {
+  outline: none;
+  border-color: var(--link-color, #5f8a8a);
+}
+.password-box button {
+  padding: 12px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  background: var(--link-color, #5f8a8a);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+.password-box button:hover {
+  opacity: 0.9;
+}
+.password-box .error {
+  color: #e53e3e;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.password-box .contact-info {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color, #e2e8f0);
+  font-size: 14px;
+}
+.password-box .contact-info a {
+  color: var(--link-color, #5f8a8a);
+}
 </style>
+
+<!-- Password Protection Overlay -->
+<div class="password-overlay" id="passwordOverlay">
+  <div class="password-box">
+    <h2>Protected Content</h2>
+    <p>This resume contains personal information and is password protected.</p>
+    <div>
+      <input type="password" id="passwordInput" placeholder="Password" maxlength="10" autofocus>
+    </div>
+    <button onclick="checkPassword()">Enter</button>
+    <div class="error" id="errorMsg"></div>
+    <div class="contact-info">
+      <p>For recruiters and hiring managers:<br>
+      Please contact <a href="mailto:kikukawa@stack-bee.io">kikukawa@stack-bee.io</a><br>
+      to request access.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+function checkPassword() {
+  const input = document.getElementById('passwordInput').value;
+  if (input === '4321') {
+    document.getElementById('passwordOverlay').style.display = 'none';
+    sessionStorage.setItem('resumeAccess', 'granted');
+  } else {
+    document.getElementById('errorMsg').textContent = 'Incorrect password';
+    document.getElementById('passwordInput').value = '';
+  }
+}
+
+document.getElementById('passwordInput').addEventListener('keypress', function(e) {
+  if (e.key === 'Enter') checkPassword();
+});
+
+// Check if already authenticated in this session
+if (sessionStorage.getItem('resumeAccess') === 'granted') {
+  document.getElementById('passwordOverlay').style.display = 'none';
+}
+</script>
 
 <!-- Language Toggle -->
 <div class="lang-toggle">

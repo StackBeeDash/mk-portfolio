@@ -1,28 +1,17 @@
 # Site Settings
 title: MK Portfolio
-description: Personal portfolio and tech blog
+description: Personal portfolio and tech blog by Masato Kikukawa
 baseurl: "/mk-portfolio"
 url: "https://stackbeedash.github.io"
 
-# Theme
-remote_theme: alshedivat/al-folio
-
-# Personal info
-first_name: Masato
-last_name: Kikukawa
-email:
-description: Software Engineer & Builder
-
-# Social
-github_username: StackBeeDash
+# Theme - Cayman (GitHub Pages supported theme)
+theme: jekyll-theme-cayman
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-remote-theme
 
 # Exclude from processing
 exclude:
@@ -30,10 +19,5 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor
-
-# al-folio settings
-enable_darkmode: true
-enable_navbar_social: true
-
-# Navigation
-nav_order: [about, projects, resume]
+  - _pages
+  - _projects

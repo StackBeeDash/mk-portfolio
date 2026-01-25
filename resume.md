@@ -199,8 +199,8 @@ IT professional with over 20 years of experience, specializing in cloud technolo
 At Microsoft, focused on Azure infrastructure and cloud technologies, delivering comprehensive technical training on networking, virtual machines, storage, disaster recovery, and cloud applications. Successfully trained over 2,500 students with consistently high satisfaction scores.
 
 Currently engaged in two primary areas:
-- **Training**: Azure instructor on Udemy and official Microsoft courses through Trainocate, Fast Lane, and other global partners
 - **Full-Stack Development**: End-to-end system development, business data analytics platforms, and offshore team management
+- **Training**: Azure instructor on Udemy and official Microsoft courses through Trainocate, Fast Lane, and other global partners
 
 ---
 
@@ -347,7 +347,7 @@ Currently engaged in two primary areas:
 | **Cloud** | Azure, Google Cloud Platform |
 | **Training** | Course design, Instructional content creation, Udemy |
 | **Programming** | C#, C++, Python, .NET, TypeScript |
-| **Databases** | SQL Server, Oracle, MySQL, Supabase |
+| **Databases** | SQL Server, Oracle, MySQL, Supabase, etc. |
 | **DevOps** | Docker, Kubernetes, GitHub Actions |
 | **Full-Stack** | HTML, JavaScript, Python, Node.js |
 
@@ -386,8 +386,8 @@ Currently engaged in two primary areas:
 マイクロソフトでは、Azureインフラストラクチャとクラウドテクノロジーに焦点を当て、ネットワーキング、仮想マシン、ストレージ、災害復旧、クラウドアプリケーションに関する包括的な技術トレーニングを提供。2,500人以上の受講生を指導し、常に高い満足度を獲得。
 
 現在、主に2つの分野で活動:
-- **トレーニング**: UdemyでのAzure講師、Trainocate、Fast Laneなどを通じたMicrosoft公式コース提供
 - **フルスタック開発**: エンドツーエンドのシステム開発、ビジネスデータ分析プラットフォーム、オフショアチーム管理
+- **トレーニング**: UdemyでのAzure講師、Trainocate、Fast Laneなどを通じたMicrosoft公式コース提供
 
 ---
 
@@ -534,7 +534,7 @@ Currently engaged in two primary areas:
 | **クラウド** | Azure, Google Cloud Platform |
 | **トレーニング** | コース設計、教育コンテンツ作成、Udemy |
 | **プログラミング** | C#, C++, Python, .NET, TypeScript |
-| **データベース** | SQL Server, Oracle, MySQL, Supabase |
+| **データベース** | SQL Server, Oracle, MySQL, Supabase, etc. |
 | **DevOps** | Docker, Kubernetes, GitHub Actions |
 | **フルスタック** | HTML, JavaScript, Python, Node.js |
 

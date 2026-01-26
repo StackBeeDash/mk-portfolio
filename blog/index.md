@@ -33,6 +33,32 @@ description: Technical articles and personal blog / 技術記事・個人ブロ�
   color: white;
   border-color: var(--link-color);
 }
+.author-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #f6f8fa;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+.author-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.author-info h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.2rem;
+}
+.author-info p {
+  margin: 0;
+  color: #586069;
+  font-size: 0.95rem;
+}
 .post-item {
   margin-bottom: 1.5rem;
 }
@@ -48,6 +74,31 @@ description: Technical articles and personal blog / 技術記事・個人ブロ�
 <div class="lang-toggle">
   <button class="lang-btn" id="lang-btn-en" onclick="setLang('en')">EN</button>
   <button class="lang-btn" id="lang-btn-ja" onclick="setLang('ja')">JA</button>
+</div>
+
+<!-- Author Section -->
+<div class="author-section">
+  <img src="/assets/images/profile.jpg" alt="Masato Kikukawa" class="author-avatar">
+  <div class="author-info">
+    <div class="lang-en">
+      <h3>Masato Kikukawa</h3>
+      <p>Full-Stack Developer & Technical Trainer. Writing about AI, cloud technologies, and productivity tools.</p>
+      <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #586069;">
+        kikukawa@stack-bee.io ・
+        <a href="https://linkedin.com/in/kikukawa9" target="_blank">LinkedIn</a> ・
+        <a href="/resume">Resume</a>
+      </p>
+    </div>
+    <div class="lang-ja">
+      <h3>菊川 正人</h3>
+      <p>フルスタック開発者＆技術トレーナー。AI、クラウド技術、生産性ツールについて書いています。</p>
+      <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #586069;">
+        kikukawa@stack-bee.io ・
+        <a href="https://linkedin.com/in/kikukawa9" target="_blank">LinkedIn</a> ・
+        <a href="/resume">レジュメ</a>
+      </p>
+    </div>
+  </div>
 </div>
 
 <div class="lang-en" markdown="1">
@@ -121,6 +172,14 @@ function setLang(lang) {
   // Update button styles
   document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
   document.getElementById('lang-btn-' + lang).classList.add('active');
+
+  // Update header tagline
+  const tagline = document.querySelector('.project-tagline');
+  if (tagline) {
+    tagline.textContent = lang === 'ja'
+      ? '技術記事・個人ブログ'
+      : 'Technical articles and personal blog';
+  }
 
   // Filter posts by language
   document.querySelectorAll('.post-item').forEach(item => {

@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', function() {
 # Masato Kikukawa
 
 <div class="contact-info">
-<a href="mailto:kikukawa@stack-bee.io">kikukawa@stack-bee.io</a>
+kikukawa@stack-bee.io
 <a href="https://www.linkedin.com/in/kikukawa9/">LinkedIn</a>
 <a href="https://github.com/StackBeeDash">GitHub</a>
 <a href="https://x.com/StackBeeDash">X (Twitter)</a>
@@ -447,7 +447,7 @@ Currently engaged in two primary areas:
 <button onclick="unlockContent()">Unlock</button>
 <div class="error" id="errorMsg"></div>
 <div class="contact-hint">
-To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukawa@stack-bee.io</a>
+To request access, please contact kikukawa@stack-bee.io
 </div>
 </div>
 
@@ -522,7 +522,7 @@ To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukaw
 # 菊川 正人
 
 <div class="contact-info">
-<a href="mailto:kikukawa@stack-bee.io">kikukawa@stack-bee.io</a>
+kikukawa@stack-bee.io
 <a href="https://www.linkedin.com/in/kikukawa9/">LinkedIn</a>
 <a href="https://github.com/StackBeeDash">GitHub</a>
 <a href="https://x.com/StackBeeDash">X (Twitter)</a>
@@ -666,7 +666,7 @@ To request access, please contact <a href="mailto:kikukawa@stack-bee.io">kikukaw
 <button onclick="unlockContentJa()">ロック解除</button>
 <div class="error" id="errorMsgJa"></div>
 <div class="contact-hint">
-アクセス権の取得は <a href="mailto:kikukawa@stack-bee.io">kikukawa@stack-bee.io</a> までご連絡ください
+アクセス権の取得は kikukawa@stack-bee.io までご連絡ください
 </div>
 </div>
 

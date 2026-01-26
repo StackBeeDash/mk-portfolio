@@ -32,6 +32,20 @@ plugins:
   - jekyll-sitemap
   - jekyll-remote-theme
 
+# Blog settings
+collections:
+  posts:
+    output: true
+    permalink: /blog/:categories/:year/:month/:day/:title/
+
+# Defaults for posts
+defaults:
+  - scope:
+      path: "blog"
+      type: "posts"
+    values:
+      layout: "post"
+
 # Exclude from processing
 exclude:
   - Gemfile

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <!-- テーマ切り替えボタン -->
+    <div class="theme-toggle">
+      <button class="theme-btn theme-btn-aurora active" onclick="setTheme('aurora')" title="Aurora Theme"></button>
+      <button class="theme-btn theme-btn-forest" onclick="setTheme('forest')" title="Forest Theme"></button>
+    </div>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ page.title }}</h1>
+      <h2 class="project-tagline">
+        {{ page.date | date: "%Y-%m-%d" }}
+        {% if page.categories %}| {{ page.categories | join: " / " }}{% endif %}
+      </h2>
+      <a href="{{ '/' | relative_url }}" class="btn">Home</a>
+      <a href="{{ '/blog/' | relative_url }}" class="btn">Blog</a>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <article class="blog-post">
+        {{ content }}
+      </article>
+
+      {% if page.tags %}
+      <div class="post-tags" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e1e4e8;">
+        <strong>Tags:</strong>
+        {% for tag in page.tags %}
+          <span style="background: #f1f8ff; padding: 0.2rem 0.5rem; border-radius: 3px; margin-right: 0.5rem;">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <footer class="site-footer">
+        <span class="site-footer-credits">Written by {{ page.author | default: site.author.name }}</span>
+      </footer>
+    </main>
+
+    <!-- テーマ切り替えスクリプト -->
+    <script>
+      function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme === 'forest' ? 'forest' : '');
+        localStorage.setItem('theme', theme);
+        updateButtons(theme);
+      }
+
+      function updateButtons(theme) {
+        document.querySelectorAll('.theme-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelector('.theme-btn-' + theme).classList.add('active');
+      }
+
+      // ページ読み込み時に保存されたテーマを適用
+      (function() {
+        const saved = localStorage.getItem('theme') || 'aurora';
+        setTheme(saved);
+      })();
+    </script>
+  </body>
+</html>

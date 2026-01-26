@@ -12,9 +12,7 @@ description: 技術記事・個人ブログ
 
 ## 最新の記事
 
-{% assign posts = site.pages | where_exp: "page", "page.path contains 'blog/'" | where_exp: "page", "page.layout == 'post'" | sort: "date" | reverse %}
-
-{% for post in posts limit: 10 %}
+{% for post in site.posts limit: 10 %}
 ### [{{ post.title }}]({{ post.url | relative_url }})
 
 <small>{{ post.date | date: "%Y-%m-%d" }} | {{ post.categories | join: " / " }}</small>

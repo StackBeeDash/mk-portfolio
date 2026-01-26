@@ -4,68 +4,133 @@ title: Blog
 description: Technical articles and personal blog / 技術記事・個人ブログ
 ---
 
+<style>
+.lang-toggle {
+  position: fixed;
+  top: 20px;
+  right: 120px;
+  z-index: 1000;
+  display: flex;
+  gap: 8px;
+}
+.lang-btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 2px solid var(--border-color);
+  background: var(--content-bg);
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.2s;
+}
+.lang-btn:hover {
+  border-color: var(--link-color);
+}
+.lang-btn.active {
+  background: var(--link-color);
+  color: white;
+  border-color: var(--link-color);
+}
+.post-item {
+  margin-bottom: 1.5rem;
+}
+.post-item.hidden {
+  display: none;
+}
+.lang-en, .lang-ja { display: none; }
+[data-lang="en"] .lang-en { display: block; }
+[data-lang="ja"] .lang-ja { display: block; }
+</style>
+
+<!-- Language Toggle (same style as resume) -->
+<div class="lang-toggle">
+  <button class="lang-btn" id="lang-btn-en" onclick="setLang('en')">EN</button>
+  <button class="lang-btn" id="lang-btn-ja" onclick="setLang('ja')">JA</button>
+</div>
+
+<div class="lang-en" markdown="1">
+
 # Blog
 
-<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-  <p id="blog-description-en" style="margin: 0;">Technical articles and personal posts.</p>
-  <p id="blog-description-ja" style="margin: 0; display: none;">技術記事や個人的な記事を投稿しています。</p>
+Technical articles and personal posts.
 
-  <!-- Language Switch -->
-  <div class="lang-switch" style="display: flex; gap: 0.5rem;">
-    <button id="lang-en" onclick="setLang('en')" style="padding: 0.3rem 0.8rem; border: 1px solid #0366d6; border-radius: 4px; cursor: pointer; background: #0366d6; color: white;">EN</button>
-    <button id="lang-ja" onclick="setLang('ja')" style="padding: 0.3rem 0.8rem; border: 1px solid #0366d6; border-radius: 4px; cursor: pointer; background: white; color: #0366d6;">日本語</button>
-  </div>
+</div>
+
+<div class="lang-ja" markdown="1">
+
+# Blog
+
+技術記事や個人的な記事を投稿しています。
+
 </div>
 
 ---
 
-## Latest Posts / 最新の記事
+<div class="lang-en" markdown="1">
 
-<div id="posts-list">
+## Latest Posts
+
+</div>
+
+<div class="lang-ja" markdown="1">
+
+## 最新の記事
+
+</div>
+
 {% for post in site.posts %}
-<div class="post-item" data-lang="{{ post.lang | default: 'ja' }}" style="margin-bottom: 1.5rem;">
+<div class="post-item" data-lang="{{ post.lang | default: 'ja' }}" markdown="1">
 
 ### [{{ post.title }}]({{ post.url | relative_url }})
 
 <small>{{ post.date | date: "%Y-%m-%d" }} | {{ post.categories | join: " / " }}{% if post.lang %} | {{ post.lang | upcase }}{% endif %}</small>
 
 {% if post.tags %}
+<div style="margin-top: 0.5rem;">
 {% for tag in post.tags limit: 5 %}
-<span style="background: #f1f8ff; padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.8rem;">{{ tag }}</span>
+<span style="background: #f1f8ff; padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.8rem; margin-right: 0.3rem;">{{ tag }}</span>
 {% endfor %}
+</div>
 {% endif %}
 
 ---
 
 </div>
 {% endfor %}
-</div>
 
 {% if site.posts.size == 0 %}
-<p id="no-posts-en">No posts yet.</p>
-<p id="no-posts-ja" style="display: none;">まだ記事がありません。</p>
+<div class="lang-en" markdown="1">
+
+No posts yet.
+
+</div>
+<div class="lang-ja" markdown="1">
+
+まだ記事がありません。
+
+</div>
 {% endif %}
 
 <script>
 function setLang(lang) {
+  document.documentElement.setAttribute('data-lang', lang);
+  localStorage.setItem('blogLang', lang);
+
   // Update button styles
-  document.getElementById('lang-en').style.background = lang === 'en' ? '#0366d6' : 'white';
-  document.getElementById('lang-en').style.color = lang === 'en' ? 'white' : '#0366d6';
-  document.getElementById('lang-ja').style.background = lang === 'ja' ? '#0366d6' : 'white';
-  document.getElementById('lang-ja').style.color = lang === 'ja' ? 'white' : '#0366d6';
+  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+  document.getElementById('lang-btn-' + lang).classList.add('active');
 
-  // Update description
-  document.getElementById('blog-description-en').style.display = lang === 'en' ? 'block' : 'none';
-  document.getElementById('blog-description-ja').style.display = lang === 'ja' ? 'block' : 'none';
-
-  // Filter posts
+  // Filter posts by language
   document.querySelectorAll('.post-item').forEach(item => {
     const postLang = item.getAttribute('data-lang');
-    item.style.display = postLang === lang ? 'block' : 'none';
+    if (postLang === lang) {
+      item.classList.remove('hidden');
+    } else {
+      item.classList.add('hidden');
+    }
   });
-
-  // Save preference
-  localStorage.setItem('blogLang', lang);
 }
 
 // Initialize on page load

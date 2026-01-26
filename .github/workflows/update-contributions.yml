@@ -32,5 +32,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add assets/images/contributions.svg
-          git diff --staged --quiet || git commit -m "chore: update GitHub contributions graph [skip ci]"
+          git diff --staged --quiet || git commit -m "chore: update GitHub contributions graph"
           git push

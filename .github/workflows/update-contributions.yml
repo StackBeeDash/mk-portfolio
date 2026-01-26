@@ -24,8 +24,7 @@ jobs:
       - name: Generate contributions SVG
         run: node scripts/generate-contributions.js
         env:
-          GH_PAT_PERSONAL: ${{ secrets.GH_PAT_PERSONAL }}
-          GH_PAT_ORG: ${{ secrets.GH_PAT_ORG }}
+          GH_PAT: ${{ secrets.GH_PAT }}
 
       - name: Commit and push if changed
         run: |

@@ -20,10 +20,7 @@ const CONFIG = {
 };
 
 // トークン（GitHub Actions用、ローカルでは gh auth を使用）
-const TOKENS = {
-  personal: process.env.GH_PAT_PERSONAL || null,
-  org: process.env.GH_PAT_ORG || null
-};
+const TOKEN = process.env.GH_PAT || null;
 
 // 日付ユーティリティ
 function formatDate(date) {
@@ -55,19 +52,19 @@ function ghExec(cmd, token = null) {
 function getAllRepos() {
   console.log('Fetching repositories...');
 
-  // 個人リポジトリ（個人用トークンを使用）
+  // 個人リポジトリ
   const personalRepos = JSON.parse(
-    ghExec(`gh repo list ${CONFIG.username} --limit 500 --json name,owner`, TOKENS.personal)
+    ghExec(`gh repo list ${CONFIG.username} --limit 500 --json name,owner`, TOKEN)
   ).map(r => ({ owner: r.owner.login, name: r.name, isOrg: false }));
 
   console.log(`  Personal repos: ${personalRepos.length}`);
 
-  // 組織リポジトリ（組織用トークンを使用）
+  // 組織リポジトリ
   let orgRepos = [];
   for (const org of CONFIG.organizations) {
     try {
       const repos = JSON.parse(
-        ghExec(`gh repo list ${org} --limit 200 --json name,owner`, TOKENS.org)
+        ghExec(`gh repo list ${org} --limit 200 --json name,owner`, TOKEN)
       ).map(r => ({ owner: org, name: r.name, isOrg: true }));
       orgRepos = orgRepos.concat(repos);
       console.log(`  ${org} repos: ${repos.length}`);
@@ -80,11 +77,10 @@ function getAllRepos() {
 }
 
 // リポジトリのコミットを取得
-function getCommitsForRepo(owner, name, since, isOrg = false) {
+function getCommitsForRepo(owner, name, since) {
   try {
-    const token = isOrg ? TOKENS.org : TOKENS.personal;
     const commits = JSON.parse(
-      ghExec(`gh api "repos/${owner}/${name}/commits?since=${since}&per_page=100" --paginate 2>/dev/null || echo "[]"`, token)
+      ghExec(`gh api "repos/${owner}/${name}/commits?since=${since}&per_page=100" --paginate 2>/dev/null || echo "[]"`, TOKEN)
     );
 
     // 自分のコミットのみフィルタ
@@ -111,7 +107,7 @@ function aggregateCommits(repos, since) {
       console.log(`  Progress: ${processedRepos}/${repos.length} repos`);
     }
 
-    const dates = getCommitsForRepo(repo.owner, repo.name, since, repo.isOrg);
+    const dates = getCommitsForRepo(repo.owner, repo.name, since);
     for (const date of dates) {
       commitsByDate[date] = (commitsByDate[date] || 0) + 1;
       totalCommits++;

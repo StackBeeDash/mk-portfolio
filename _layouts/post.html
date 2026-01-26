@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 {% seo %}
+
+    <!-- hreflang tags for multilingual SEO -->
+    {% if page.alternate %}
+    <link rel="alternate" hreflang="ja" href="{{ site.url }}{{ page.alternate.ja }}" />
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.alternate.en }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.alternate.en }}" />
+    {% endif %}
+
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
   </head>
@@ -22,12 +30,53 @@
         {{ page.date | date: "%Y-%m-%d" }}
         {% if page.categories %}| {{ page.categories | join: " / " }}{% endif %}
       </h2>
+
+      <!-- Language Switcher -->
+      {% if page.alternate %}
+      <div class="lang-switcher" style="margin-top: 0.5rem;">
+        {% if page.lang == 'ja' %}
+          <span style="font-weight: bold; color: #fff;">日本語</span>
+          <span style="color: #ccc;"> | </span>
+          <a href="{{ page.alternate.en }}" style="color: #ccc;">English</a>
+        {% else %}
+          <a href="{{ page.alternate.ja }}" style="color: #ccc;">日本語</a>
+          <span style="color: #ccc;"> | </span>
+          <span style="font-weight: bold; color: #fff;">English</span>
+        {% endif %}
+      </div>
+      {% endif %}
+
       <a href="{{ '/' | relative_url }}" class="btn">Home</a>
       <a href="{{ '/blog/' | relative_url }}" class="btn">Blog</a>
     </header>
 
     <main id="content" class="main-content" role="main">
       <article class="blog-post">
+
+        <!-- TL;DR Section -->
+        {% if page.tldr_summary or page.tldr_points %}
+        <div class="tldr" style="background: #f6f8fa; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; border-left: 4px solid #0366d6;">
+          <h2 style="margin-top: 0; color: #0366d6;">TL;DR</h2>
+
+          {% if page.tldr_summary %}
+          <div class="tldr-summary" style="margin-bottom: 1rem;">
+            {{ page.tldr_summary | markdownify }}
+          </div>
+          {% endif %}
+
+          {% if page.tldr_points %}
+          <div class="tldr-points">
+            <strong>{% if page.lang == 'ja' %}ポイント:{% else %}Key Points:{% endif %}</strong>
+            <ul style="margin-bottom: 0;">
+              {% for point in page.tldr_points %}
+              <li>{{ point }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+        </div>
+        {% endif %}
+
         {{ content }}
       </article>
 

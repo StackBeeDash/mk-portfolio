@@ -5,6 +5,24 @@ date: 2026-01-26
 categories: [tech, claude-code]
 tags: [Claude Code, AI, 生産性, チーム構築, Anthropic]
 author: Masato Kikukawa
+lang: ja
+alternate:
+  ja: /ja/blog/2026/01/26/building-ai-team/
+  en: /en/blog/2026/01/26/building-ai-team/
+tldr_summary: |
+  Claude Code は単なる AI アシスタントではなく、「チーム」として構築できるパートナーだ。技術レビュアー、品質レビュアー、セキュリティレビュアーなど、複数の専門家を YAML で定義し、議論のテーマに応じて招集できる。
+
+  私自身、Claude Code を使って5つの Issue 作成、Discussion レビュー、2つの Skill 実装をわずか2時間で完了した。従来なら数日かかる作業が数分で終わることも珍しくない。この生産性の向上は、AI を「1人のアシスタント」ではなく「チーム」として活用することで実現している。
+
+  2026年1月に発表された Claude Cowork は GUI 版として使いやすさを提供するが、真のパワーは CLI 版にある。Skills による拡張、MCP サーバー統合、Git/GitHub との深い連携など、構築の自由度が圧倒的に高い。
+
+  月額 $100 の Pro 版は、この生産性を考えれば安すぎると感じる。まずは試してみてほしい。
+tldr_points:
+  - Claude Code は AI を「チーム」として構築できる初めてのツール
+  - YAML で複数の専門家（レビュアー）を定義し、議論に応じて招集
+  - 体感で1人が10人分の仕事ができる生産性向上
+  - CLI 版は構築の自由度が高く、Skills・MCP・GitHub 統合が強力
+  - Pro 版（月額 $100）を強くお勧め
 ---
 
 # Claude Code が変える働き方：AIを「チーム」として構築する時代

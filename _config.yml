@@ -32,16 +32,35 @@ plugins:
   - jekyll-sitemap
   - jekyll-remote-theme
 
-# Blog settings
-permalink: /blog/:categories/:year/:month/:day/:title/
+# Blog settings - Multilingual
+# Default language is English, Japanese available at /ja/
 
-# Defaults for posts
+# Defaults for posts (multilingual)
 defaults:
+  # Japanese posts
+  - scope:
+      path: "_posts/ja"
+      type: "posts"
+    values:
+      layout: "post"
+      lang: "ja"
+      permalink: /ja/blog/:year/:month/:day/:title/
+  # English posts
+  - scope:
+      path: "_posts/en"
+      type: "posts"
+    values:
+      layout: "post"
+      lang: "en"
+      permalink: /en/blog/:year/:month/:day/:title/
+  # Legacy posts (fallback)
   - scope:
       path: "_posts"
       type: "posts"
     values:
       layout: "post"
+      lang: "ja"
+      permalink: /ja/blog/:year/:month/:day/:title/
 
 # Exclude from processing
 exclude:

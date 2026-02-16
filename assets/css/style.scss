@@ -236,3 +236,16 @@ body {
 .theme-btn-forest {
   background: linear-gradient(135deg, #134e5e 0%, #71b280 100%);
 }
+
+/* 画像ホバーズーム */
+.main-content img:not(.profile-photo) {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: zoom-in;
+}
+
+.main-content img:not(.profile-photo):hover {
+  transform: scale(1.5);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  position: relative;
+}

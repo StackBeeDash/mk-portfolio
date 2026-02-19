@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Resume - Masato Kikukawa
-description: Full-Stack Developer & Technical Trainer
+description: AI-Driven Developer & Technical Enablement Specialist
 ---
 
 <style>
@@ -103,6 +103,18 @@ description: Full-Stack Developer & Technical Trainer
 }
 .achievements li {
   margin-bottom: 5px;
+}
+/* Key Highlights */
+.highlights p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  padding: 12px 16px;
+  background: var(--table-alt-bg);
+  border-radius: 8px;
+  border-left: 3px solid var(--link-color);
+}
+.highlights p strong {
+  color: var(--heading-color);
 }
 .cert-grid {
   display: grid;
@@ -315,13 +327,28 @@ kikukawa@stack-bee.io
 
 ## Summary
 
-IT professional with over 20 years of experience, specializing in cloud technologies, software development, and technical education. Career includes significant roles at Microsoft Japan and TOPGATE. Currently providing training and full-stack development services as a freelancer.
+IT professional with over 20 years of experience in cloud technologies, AI-driven development, and technical enablement. Career spans Microsoft Japan, TOPGATE, and current freelance work combining full-stack development with AI agent-powered workflows. Passionate about enabling teams and organizations to leverage AI for transformative productivity gains.
 
-At Microsoft, focused on Azure infrastructure and cloud technologies, delivering comprehensive technical training on networking, virtual machines, storage, disaster recovery, and cloud applications. Successfully trained over 2,500 students with consistently high satisfaction scores.
+Currently focused on three areas:
+- **AI-Driven Development**: Building production systems using AI pair programming (Claude Code), achieving 400%+ development acceleration
+- **Business Process Optimization**: Transforming manual workflows into efficient, data-driven operations through AI automation
+- **Technical Training & Enablement**: Delivering Azure/AI training with 2,500+ students trained and 90%+ satisfaction
 
-Currently engaged in two primary areas:
-- **Full-Stack Development**: End-to-end system development, business data analytics platforms, and offshore team management
-- **Training**: Azure instructor on Udemy and official Microsoft courses through Trainocate, Fast Lane, and other global partners
+---
+
+## Key Highlights
+
+<div class="highlights" markdown="1">
+
+**AI-Driven Innovation** --- Built full-stack production systems using AI agents (Claude Code), achieving 400%+ development acceleration and 80% cost reduction. Developed Ad Evaluation platform (349 commits in 3 weeks, ~2.4MB code) and Affiliate Management system (109 commits in 3 weeks, 310KB code) --- all driven by AI pair programming.
+
+**Business Process Optimization** --- Dramatically streamlined business workflows through AI-driven automation, transforming manual processes into efficient, data-driven operations across multiple client engagements.
+
+**Technical Enablement & AI Advocacy** --- Champion AI agent adoption within organizations, leading hands-on Claude Code training sessions and establishing AI-driven development practices for engineering teams.
+
+**Proven Training Delivery** --- Delivered 320+ training sessions reaching 2,500+ students with 90%+ satisfaction. Recognized Microsoft trainer with Ignite speaking experience.
+
+</div>
 
 ---
 
@@ -339,14 +366,16 @@ Currently engaged in two primary areas:
 <div class="job-period">July 2025 - Present</div>
 </div>
 
+- Build production systems using AI-driven development (Claude Code), achieving 400%+ acceleration over traditional workflows
 - Deliver Azure online training through Udemy and customized content for enterprise clients
-- Design and develop web applications and data analysis systems
-- Build Facebook business data analytics systems for data-driven decision-making
+- Design and develop web applications, data analysis systems, and business process automation
+- Champion AI agent adoption within organizations, leading hands-on training sessions
 - Manage offshore development teams, overseeing the entire development lifecycle
 
 <p class="achievements-label">Achievements:</p>
+- **Ad Evaluation System**: 349 commits, ~2.4MB code delivered in 3 weeks using AI pair programming
+- **Affiliate Management System**: 109 commits, 310KB code delivered in 3 weeks
 - Successfully launched and maintained Azure fundamentals courses on Udemy
-- Directed multiple international projects with offshore teams
 - Built partnerships with leading training companies (Trainocate, Fast Lane, Microsoft)
 </div>
 
@@ -494,12 +523,13 @@ To request access, please contact kikukawa@stack-bee.io
 
 | Category | Technologies |
 |----------|--------------|
+| **AI** | Claude Code, GitHub Copilot, Azure OpenAI, GPT-4, AI-driven development workflows |
 | **Cloud** | Azure, Google Cloud |
-| **Training** | Course design, Instructional content creation, Udemy |
-| **Programming** | C#, C++, Python, .NET, TypeScript |
-| **Databases** | SQL Server, MySQL, Supabase, Redis, Cosmos DB, Firestore, etc. |
+| **Training** | Course design, Instructional content creation, Udemy, Technical enablement |
+| **Programming** | TypeScript, Python, C#, C++, .NET |
+| **Web** | Nuxt.js, Vue.js, Node.js, HTML, JavaScript |
+| **Databases** | Supabase, SQL Server, MySQL, Redis, Cosmos DB, Firestore |
 | **DevOps** | Docker, Kubernetes, GitHub Actions |
-| **Full-Stack** | HTML, JavaScript, Python, Node.js |
 
 </div>
 
@@ -534,13 +564,28 @@ kikukawa@stack-bee.io
 
 ## 概要
 
-20年以上の経験を持つITプロフェッショナル。クラウドテクノロジー、ソフトウェア開発、技術教育を専門とする。日本マイクロソフトとTOPGATEでの重要な役割を経て、現在はフリーランスとしてトレーニングとフルスタック開発サービスを提供。
+20年以上の経験を持つITプロフェッショナル。クラウドテクノロジー、AI駆動開発、テクニカルイネーブルメントを専門とする。日本マイクロソフトとTOPGATEでの経験を経て、現在はAIエージェントを活用したフルスタック開発とトレーニングを提供。チームと組織がAIを活用して生産性を変革することを支援することに注力。
 
-マイクロソフトでは、Azureインフラストラクチャとクラウドテクノロジーに焦点を当て、ネットワーキング、仮想マシン、ストレージ、災害復旧、クラウドアプリケーションに関する包括的な技術トレーニングを提供。2,500人以上の受講生を指導し、常に高い満足度を獲得。
+現在、3つの分野で活動:
+- **AI駆動開発**: AIペアプログラミング（Claude Code）を活用し、従来比400%以上の開発速度を実現
+- **業務プロセス改善**: AI自動化による手動ワークフローの効率的なデータ駆動型運用への変革
+- **テクニカルトレーニング＆イネーブルメント**: Azure/AIトレーニングで2,500人以上を指導、満足度90%以上
 
-現在、主に2つの分野で活動:
-- **フルスタック開発**: エンドツーエンドのシステム開発、ビジネスデータ分析プラットフォーム、オフショアチーム管理
-- **トレーニング**: UdemyでのAzure講師、Trainocate、Fast Laneなどを通じたMicrosoft公式コース提供
+---
+
+## 主な強み
+
+<div class="highlights" markdown="1">
+
+**AI駆動イノベーション** --- AIエージェント（Claude Code）を活用してフルスタックプロダクションシステムを構築。開発速度400%以上の向上、コスト80%削減を実現。広告評価プラットフォーム（3週間で349コミット、コード量約2.4MB）やアフィリエイト管理システム（3週間で109コミット、コード量310KB）をAIペアプログラミングで開発。
+
+**業務プロセス最適化** --- AI駆動の自動化で業務ワークフローを劇的に効率化。手動プロセスを効率的なデータ駆動型運用に変革。
+
+**テクニカルイネーブルメント＆AI推進** --- 組織内でのAIエージェント導入を推進。Claude Codeのハンズオン研修をリードし、エンジニアリングチームにAI駆動開発プラクティスを確立。
+
+**確かなトレーニング実績** --- 320回以上の研修を実施し、2,500人以上の受講生に到達。満足度90%以上。Microsoft認定トレーナーとしてIgniteでの登壇経験あり。
+
+</div>
 
 ---
 
@@ -558,14 +603,16 @@ kikukawa@stack-bee.io
 <div class="job-period">2025年7月 - 現在</div>
 </div>
 
+- AI駆動開発（Claude Code）でプロダクションシステムを構築、従来比400%以上の開発速度を実現
 - Udemyを通じてAzureオンライン研修を提供、企業向けカスタマイズコンテンツを作成
-- Webアプリケーションおよびデータ分析システムの設計・開発
-- Facebookビジネスデータ分析システムの構築
+- Webアプリケーション、データ分析システム、業務プロセス自動化の設計・開発
+- 組織内でのAIエージェント導入を推進、ハンズオン研修をリード
 - オフショア開発チームの管理、計画からリリースまでの全工程を監督
 
 <p class="achievements-label">実績:</p>
+- **広告評価システム**: AIペアプログラミングで3週間、349コミット、コード量約2.4MB
+- **アフィリエイト管理システム**: 3週間、109コミット、コード量310KB
 - UdemyでAzure基礎コースの立ち上げ・運営に成功
-- 複数の国際プロジェクトを指揮、オフショアチームを管理
 - 主要トレーニング企業（Trainocate、Fast Lane、Microsoft）とパートナーシップを構築
 </div>
 
@@ -713,12 +760,13 @@ kikukawa@stack-bee.io
 
 | カテゴリ | 技術 |
 |---------|------|
+| **AI** | Claude Code, GitHub Copilot, Azure OpenAI, GPT-4, AI駆動開発ワークフロー |
 | **クラウド** | Azure, Google Cloud |
-| **トレーニング** | コース設計、教育コンテンツ作成、Udemy |
-| **プログラミング** | C#, C++, Python, .NET, TypeScript |
-| **データベース** | SQL Server, MySQL, Supabase, Redis, Cosmos DB, Firestore, etc. |
+| **トレーニング** | コース設計、教育コンテンツ作成、Udemy、テクニカルイネーブルメント |
+| **プログラミング** | TypeScript, Python, C#, C++, .NET |
+| **Web** | Nuxt.js, Vue.js, Node.js, HTML, JavaScript |
+| **データベース** | Supabase, SQL Server, MySQL, Redis, Cosmos DB, Firestore |
 | **DevOps** | Docker, Kubernetes, GitHub Actions |
-| **フルスタック** | HTML, JavaScript, Python, Node.js |
 
 </div>
 
@@ -730,8 +778,8 @@ kikukawa@stack-bee.io
 
 <script>
 const headerDescriptions = {
-  en: 'Full-Stack Developer & Technical Trainer with 20+ years of experience in Microsoft technologies, Azure, Google Cloud, and AI/LLM.',
-  ja: 'フルスタック開発者＆技術トレーナー。Microsoft技術、Azure、Google Cloud、AI/LLMで20年以上の経験。'
+  en: 'AI-Driven Developer & Technical Enablement Specialist | 20+ years in Cloud, AI, and Full-Stack Development',
+  ja: 'AI駆動開発者＆テクニカルイネーブルメントスペシャリスト｜クラウド・AI・フルスタック開発で20年以上の経験'
 };
 
 function setLang(lang) {

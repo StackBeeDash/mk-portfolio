@@ -27,7 +27,7 @@
   <rect x="35" y="49" width="11" height="11" rx="2" ry="2" fill="#ebedf0"><title>2025-03-10: No contributions</title></rect>
   <rect x="35" y="63" width="11" height="11" rx="2" ry="2" fill="#ebedf0"><title>2025-03-11: No contributions</title></rect>
   <rect x="35" y="77" width="11" height="11" rx="2" ry="2" fill="#ebedf0"><title>2025-03-12: No contributions</title></rect>
-  <rect x="35" y="91" width="11" height="11" rx="2" ry="2" fill="#9be9a8"><title>2025-03-13: 1 commit</title></rect>
+  <rect x="35" y="91" width="11" height="11" rx="2" ry="2" fill="#ebedf0"><title>2025-03-13: No contributions</title></rect>
   <rect x="35" y="105" width="11" height="11" rx="2" ry="2" fill="#ebedf0"><title>2025-03-14: No contributions</title></rect>
   <rect x="35" y="119" width="11" height="11" rx="2" ry="2" fill="#ebedf0"><title>2025-03-15: No contributions</title></rect>
   <rect x="49" y="35" width="11" height="11" rx="2" ry="2" fill="#40c463"><title>2025-03-16: 3 commits</title></rect>
@@ -391,7 +391,8 @@
   <rect x="763" y="49" width="11" height="11" rx="2" ry="2" fill="#ebedf0"><title>2026-03-09: No contributions</title></rect>
   <rect x="763" y="63" width="11" height="11" rx="2" ry="2" fill="#40c463"><title>2026-03-10: 3 commits</title></rect>
   <rect x="763" y="77" width="11" height="11" rx="2" ry="2" fill="#216e39"><title>2026-03-11: 15 commits</title></rect>
-  <rect x="763" y="91" width="11" height="11" rx="2" ry="2" fill="#ebedf0"><title>2026-03-12: No contributions</title></rect>
+  <rect x="763" y="91" width="11" height="11" rx="2" ry="2" fill="#9be9a8"><title>2026-03-12: 1 commit</title></rect>
+  <rect x="763" y="105" width="11" height="11" rx="2" ry="2" fill="#ebedf0"><title>2026-03-13: No contributions</title></rect>
   <text x="642" y="170" class="legend">Less</text>
   <rect x="672" y="160" width="10" height="10" rx="2" fill="#ebedf0"/>
   <rect x="686" y="160" width="10" height="10" rx="2" fill="#9be9a8"/>
